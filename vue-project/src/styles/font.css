@@ -1,0 +1,46 @@
+:root {
+  --min-screen: 320px;
+  --max-screen: 1920;
+}
+
+h1 {
+  font-size: calc(32px + (48 - 32) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 32px до 48px */
+}
+
+h2 {
+  font-size: calc(24px + (32 - 24) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 24px до 32px */
+}
+
+h3 {
+  font-size: calc(20px + (28 - 20) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 20px до 28px */
+}
+
+h4 {
+  font-size: calc(18px + (24 - 18) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 18px до 24px */
+}
+
+h5 {
+  font-size: calc(16px + (20 - 16) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 16px до 20px */
+}
+
+h6 {
+  font-size: calc(14px + (16 - 14) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 14px до 16px */
+}
+
+small,
+.caption {
+  font-size: calc(12px + (14 - 12) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 12px до 14px */
+}
+
+p,
+a,
+button,
+input,
+li,
+strong,
+div,
+body,
+span,
+.mdi {
+  font-size: calc(14px + (16 - 14) * ((100vw - var(--min-screen)) / var(--max-screen))); /* от 14px до 16px */
+}

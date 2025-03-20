@@ -1,0 +1,55 @@
+@import 'color-palette.css';
+@import 'font.css';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: transparent;
+    border: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: var(--additional-color);
+  }
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dominant-color);
+  color: var(--content-color);
+}
+
+a,
+button {
+  cursor: pointer;
+  color: var(--content-color);
+  padding: 8px;
+}
+
+input {
+  padding: 8px;
+  &:focus {
+    outline: none;
+  }
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
